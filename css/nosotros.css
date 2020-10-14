@@ -1,0 +1,148 @@
+/*font-family: 'Open Sans', sans-serif;*/
+body{
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+header{
+    background-color: #2e64a1;
+    padding: 1em 0;
+
+}
+header h1{
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight:100;/*el peso es mas fino*/
+    display:inline-block;/*me pone el elemento en la misma linea que otro*/
+    position: relative;
+    bottom: 30px;
+}
+nav{
+    background-color: #6da9ed;
+    margin-bottom: 2em;
+
+}
+nav ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+nav ul li{
+    display:inline-block;
+    width:16.3%;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    text-align:center;/*es necesario poner luego el display block para que se centre el contenido*/
+    display:block;
+    padding: 0.2em 0.4em;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0,0, 0.3);/*esto es para los enlaces para ponerle un color por ejemplo de fondo al pasar el mouse*/
+}
+nav ul li a.activo{
+    background-color:#4c76a5;
+}
+footer{
+    background-color:#ccc;
+    clear:both;
+    color: #333;
+    padding: 3em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+.holder{/* esto se usa en este caso para mantener el color de los elementos
+    si mi página tuviera todo el mismo color no
+    */
+    width:960px;
+    margin:0 auto;
+}
+h2{
+    color:#2e64a1;
+    font-weight: 400;
+    margin: 0 0 1em; 
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*inicio home*/
+.homeimg{
+    margin-bottom: 1.5em;
+    /**clear: both;*/
+}
+.bienvenidos, .testimonio{
+    box-sizing: border-box;
+}
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+.testimonio{
+    width: 25%;
+}
+.testim{
+    background-color: #ccc;
+    padding:1em;
+}
+.testim .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+.testim .autor{
+    font-size: 0.7em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+
+}
+/*fin home*/
+
+/*inicio nosotros*/
+.historia p{
+    font-size: 0.8em;
+}
+.person{
+    width: 18%;
+    border:1px solid gray;
+    border-radius: 0.25em;
+    float:left;
+    margin-left:2.25%;
+    box-sizing: border-box;
+}
+.person figure{
+    margin:0.8em 0 1em;
+    text-align: center;
+}
+.person figure img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.5);
+}
+.person h5,.person h6{
+text-align: center;
+font-weight: normal;
+color: #2e64a1;
+margin:0;
+}
+.person h5{
+    font-size: 0.9em;
+}
+.person h6{
+    font-size: 0.8em;
+    font-style: italic;
+}
+.person p{
+    font-size: 0.7em;
+    columns: #444;
+    margin:0 1em 1em;
+}
+.person:first-child{/* se usa first-child o last-child para llamar al primer hijo de un elemento o el ultimo*/
+    margin-left: 0;
+}
+/*fin nosotros*/
